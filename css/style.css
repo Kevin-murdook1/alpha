@@ -1,0 +1,305 @@
+html{
+
+font-size: 62.5%; /* reset para rems-62.5% =10px de 16pc*/
+box-sizing: border-box;
+
+}
+
+*, *:before, *:after{
+box-sizing: inherit;
+
+}
+
+
+
+body{
+
+    font-family: 'Lato', sans-serif;
+
+    font-size: 1.6rem;
+    line-height: 2;
+
+}
+
+
+
+
+/*Globales*/
+img{
+
+    max-width: 100%;
+    
+    }
+
+h1{
+font-size: 3.8rem;
+
+
+}
+
+h2{
+
+font-size: 3.4rem;
+
+
+}
+h3{
+
+font-size: 3rem;
+
+
+
+}
+
+h4{
+
+font-size: 2.6rem;
+
+
+}
+
+
+/*Utilidades*/
+
+
+
+.seccion{
+
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+
+.fw-300{
+
+font-weight: 300;/*ancho de texto*/
+
+}
+
+.centrar-texto{
+
+text-align: center;
+
+}
+
+.d-block{
+
+display: block!important;
+
+}
+
+
+/*Botones*/
+
+.boton{
+
+color: white;
+font-weight: 700;/*para el ancho del texto */
+font-size: 1.8rem;
+text-transform: uppercase;
+text-decoration: none; /*quita el subrayado*/
+text-align: center;
+padding:1rem 3rem;  /*cuadraar el boton , sino uso esto el boton estaria pergado a las palabras (adentro) */
+
+margin-top: 3rem;/*afeura del boton lo cuadra y separa de las letras */
+display: inline-block;
+
+
+
+}
+
+.boton-amarillo{
+
+background-color: #e08709;
+
+}
+
+
+.boton-verde{
+
+background-color: limegreen;
+
+
+}
+
+.ver-todas{
+
+display: flex;
+
+justify-content: flex-end;/*Para ponerlo al ultimo*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Header*/
+
+
+.contenedor{
+
+max-width: 120rem;
+margin:0 auto 0 auto ;/*Hace que este al centro*/
+
+}
+
+
+
+
+.site-header.inicio{ /*esto es el contenedor de lo primero*/
+
+
+
+background-image: url(../img/header.jpg);
+background-position:center center;
+background-size: cover;
+height: 100vh;
+min-height: 60rem;
+}
+
+.contenido-header{
+
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+
+
+}
+
+.contenido-header h1{
+
+    color: white;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2; /*aumenta el interlineado */
+    
+}
+
+.barra{
+
+display: flex;
+justify-content: space-between;
+padding-top: 3rem;/*baja el contenido de la parte superior .03 px*/
+align-items: center;
+
+}
+
+
+.navegacion a {
+
+
+color: white;
+
+text-decoration:none;
+font-size: 2rem;
+
+margin-right:3rem ;
+
+font-family: 'Times New Roman', Times, serif;
+
+
+}
+.navegacion a:hover{
+
+color:blue;
+
+
+}
+.navegacion a:last-of-type{
+margin: 0;
+
+
+
+
+}
+
+
+/*ICONO NOSOTROS*/
+
+
+
+
+
+
+/*el display flex es para ponerlo de forma horizontal los iconos de nosotros*/
+.icono-nosotros{
+
+display: flex;
+text-align: center; /*es para alineaar al centro los iconos de nostros*/
+
+}
+
+.icono{
+
+flex-basis: calc(33.3%-1rem);
+
+
+
+}
+
+.icono h3 {
+
+text-transform: uppercase;/*me ayuda a convertir a mayusculas*/
+
+
+}
+
+/*Anuncios*/
+
+
+.contenedor-anuncio {
+
+display: flex;/*Sirve para acomodarlo en horizontal*/
+justify-content: space-between;
+
+
+}
+
+.anuncio {
+
+        flex-basis: calc(33.3% - 1rem);
+
+        border-style: solid;
+        border-color: #b5b5b5;/*Color de los bordes*/
+      border-width: 2px;
+
+      /*border: 2px solid #b5b5b5;     forma mas abrevidad de los tres bordes de arriba */
+
+      background-color: whitesmoke;/*Color del contenedor*/
+     
+}
+
+
+.contenido-anuncio{
+
+padding: 2rem;/*Alinea las medidas adentro e un cuadro o contenedor*/
+
+
+}
+
+.contenido-anuncio h3 , .contenido-anuncio p {
+
+margin: 0;
+
+
+
+}
+
+.precio{
+
+
+ color: limegreen;
+
+ font-weight: 700;
+}
